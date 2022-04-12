@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto sans-serif;
+}
+
+.b_t {
+    background-color: #2e3a46;
+}
+
+select {
+    height: 2.3rem;
+    width: 5.5rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bkg_cont {
+    background-color: #1e2d3b;
+    min-height: calc(100vh - 88px);
+}
+
+.card_back {
+    background-color: #2e3a46 !important;
+}
+
+h4 {
+    text-transform: uppercase;
+    margin: 1rem 0 !important;
+}
