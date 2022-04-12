@@ -3,7 +3,7 @@
         <div class="b_t text-white flex p-3">
             <h1>SPOTIFY</h1>
 
-            <select class="rounded" name="generi" id="generi" v-model="selected" @change="$emit('changeMusic', selected)">
+            <select class="rounded" name="generi" id="generi">
                 <option default value="general">General</option>
                 <option value="rock">Rock</option>
                 <option value="jazz">Jazz</option>

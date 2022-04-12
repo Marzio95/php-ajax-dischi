@@ -1,5 +1,5 @@
 <div class="container-fluid bkg_cont">
-    <div v-else class="container height">
+    <div class="container height">
         <div class="row gap-4 justify-content-center p-5">
             <?php
             foreach ($array_dischi as $disco) { ?>
