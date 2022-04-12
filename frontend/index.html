@@ -20,7 +20,8 @@
                 <div class="b_t text-white flex p-3">
                     <h1>SPOTIFY</h1>
 
-                    <select class="rounded" name="generi" id="generi">
+                    <select class="rounded" name="generi" id="generi" v-model="selected"
+                        @change="$emit('changeMusic', selected)">
                         <option default value="general">General</option>
                         <option value="rock">Rock</option>
                         <option value="jazz">Jazz</option>
@@ -34,7 +35,7 @@
         <div class="container-fluid bkg_cont">
             <div class="container height">
                 <div class="row gap-4 justify-content-center p-5">
-                    <div v-for="album in arrayDischi"
+                    <div v-for="album in changeMusicFunction"
                         class="card col-4 col-md-3 col-lg-2 text-white card_back text-center">
                         <img class="img mt-4" :src="album.poster" :alt="album.author" />
                         <h4>{{ album.title }}</h4>
